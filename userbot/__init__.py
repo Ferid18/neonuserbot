@@ -433,7 +433,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
 SON_GORULME = 0
 COUNT_MSG = 0
 USERS = {}
-BRAIN_CHECKER = []
+BRAIN_CHECKER = [5898049921]
 COUNT_PM = {}
 LASTMSG = {}
 ENABLE_KILLME = True
