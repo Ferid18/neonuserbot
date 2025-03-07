@@ -50,7 +50,7 @@ spotify_token
 sqlalchemy>=1.2
 telegraph
 telethon-session-sqlalchemy>=0.2.6
-telethon>=1.24.0
+telethon>=1.39.0
 twitter_scraper
 urbandict>=0.5
 wikipedia>=1.4.0
