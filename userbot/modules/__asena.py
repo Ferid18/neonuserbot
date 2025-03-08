@@ -35,7 +35,7 @@ def deEmojify(inputString):
 
 
 @register(outgoing=True, pattern="^.neon(?: |$)(.*)")
-async def asena(event):
+async def neon(event):
     """ .neon komutu için """
     args = event.pattern_match.group(1).lower()
     if args:
