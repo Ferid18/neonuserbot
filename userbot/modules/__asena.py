@@ -25,7 +25,7 @@ import html
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__asena")
+LANG = get_value("__neon")
 
 # ████████████████████████████████ #
 
@@ -34,9 +34,9 @@ def deEmojify(inputString):
     return get_emoji_regexp().sub(u'', inputString)
 
 
-@register(outgoing=True, pattern="^.asena(?: |$)(.*)")
+@register(outgoing=True, pattern="^.neon(?: |$)(.*)")
 async def asena(event):
-    """ .asena komutu için """
+    """ .neon komutu için """
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
@@ -70,15 +70,15 @@ async def asena(event):
             return await event.edit("**Chatbot Halihazırda Açık!**")
 
         BOT = "Y"
-        await event.edit("**Asena Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Asena` **ile başlayın.**")
+        await event.edit("**Neon Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Neon` **ile başlayın.**")
     elif (event.pattern_match.group(1) == "off" or event.pattern_match.group(1) == "kapa" or event.pattern_match.group(1) == "kapat"):
         if BOT == "N":
             return await event.edit("**Chatbot Halihazırda Kapalı!**")
 
         BOT = "N"
-        await event.edit("**Asena Yapay Zeka ChatBot Kapandı!**")
+        await event.edit("**Neon Yapay Zeka ChatBot Kapandı!**")
     else:
-        await event.edit("**Eksik Parametreler!** \n`.asena chatbot` **Komutunu kullanarak talimatları okuyun.**")
+        await event.edit("**Eksik Parametreler!** \n`.neon chatbot` **Komutunu kullanarak talimatları okuyun.**")
 
 
 async def translate_to_msg(text_msg, to):
@@ -100,11 +100,11 @@ async def txt(msg):
     if BOT == "Y":
         message = msg.raw_text
         user_id = msg.sender_id
-        if message.startswith("asena") or message.startswith("Asena"):
-            if message.startswith("asena"):
-                message = message.replace("asena", "", 1)
+        if message.startswith("neon") or message.startswith("Neon"):
+            if message.startswith("neon"):
+                message = message.replace("neon", "", 1)
             else:
-                message = message.replace("Asena", "", 1)
+                message = message.replace("Neon", "", 1)
 
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
                 aftext = await translate_to_msg(deEmojify(message), "en")
@@ -163,5 +163,5 @@ Help.add_command('chatbot',
     'Yapay Zeka Sohbet Botunu Aktif Eder.',
     'chatbot on \nchatbot off'
 )
-Help.add_info("@phaticusthiccy tarafından yapılmıştır.")
+Help.add_info("@Tiri_vir_isler tarrafından yapılmıştır.")
 Help.add()
