@@ -166,7 +166,7 @@ async def pins(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.asena {cmdhelp}` __yazınız.__')
+                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.neon {cmdhelp}` __yazınız.__')
             else:
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
                 userbot.cmdhelp.CmdHelp(dosya).add_warning('Komutlar bulunamadı!').add()
@@ -175,12 +175,12 @@ async def pins(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.asena {cmdhelp}` __yazınız.__')
+                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.neon {cmdhelp}` __yazınız.__')
             else:
                 dosyaAdi = reply_message.file.name.replace('.py', '')
                 extractCommands(dosya)
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.asena {dosyaAdi}` __yazınız.__')
+                return await event.edit(f'**Modül başarıyla yüklendi!**\n__Modülun komutları ve kullanım hakkında bilgi almak için__ `.neon {dosyaAdi}` __yazınız.__')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
