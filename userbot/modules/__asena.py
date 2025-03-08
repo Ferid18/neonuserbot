@@ -63,7 +63,7 @@ async def neon(event):
 BOT = "N"
 
 @register(outgoing=True, pattern="^.chatbot ?(.*)")
-async def asena(event):
+async def neon(event):
     global BOT
     if (event.pattern_match.group(1) == "on" or event.pattern_match.group(1) == "aç" or event.pattern_match.group(1) == "ac"):
         if BOT == "Y":
