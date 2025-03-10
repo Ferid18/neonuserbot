@@ -121,10 +121,10 @@ def extractCommands(file):
                         Komutlar.append(KomutStr)
 
             # AsenaPY
-            Asenapy = re.search('\"\"\"ASENAPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Asenapy == None:
-                Asenapy = Asenapy.group(0)
-                for Satir in Asenapy.splitlines():
+            Neonpy = re.search('\"\"\"ASENAPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Neonpy == None:
+                Neonpy = Neonpy.group(0)
+                for Satir in Neonpy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -160,7 +160,7 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Türk'ü Korusun. 🐺 Asena çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Türk'ü Korusun. 🐺 Neonuserbot çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
