@@ -18,8 +18,8 @@ git+https://github.com/johnwmillr/LyricsGenius.git
 gitpython
 google-api-python-client
 google-auth-oauthlib
-googletrans==4.0.0-rc1
 google_images_download>=2.8.0
+googletrans==4.0.0-rc1
 gTTS-token>=1.1.3
 gTTS>=2.2.3
 hachoir
@@ -28,7 +28,7 @@ httplib2
 humanize
 imagedown
 lottie
-lxml==4.6.4
+lxml>=4.6.5,<5
 lyricsgenius
 numpy
 oauth2client
@@ -49,8 +49,8 @@ spotdl
 spotify_token
 sqlalchemy>=1.4.22
 telegraph
-telethon-session-sqlalchemy==0.2.16
 telethon>=1.23.0
+telethon-session-sqlalchemy==0.2.16
 twitter_scraper==0.4.4
 urbandict==0.6.1
 wikipedia>=1.4.0
