@@ -31,7 +31,7 @@
             "PLUG_DELETED": "`Plugin deleted successfully!` '**You need to restart operations to be implemented.**",
             "ASENA_PLUGIN_CAPTION": "This is a plugin of [Asena](https://t.me/AsenaUserBot)."
         },
-        "__asena": {
+        "__neon": {
             "NEED_PLUGIN": "Please specify an Asena module name.",
             "NEED_MODULE": "Please specify which Asena module you want help for !!\nUse: .asena <module name>"
         },
