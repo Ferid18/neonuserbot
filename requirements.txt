@@ -51,8 +51,8 @@ sqlalchemy>=1.4.22
 telegraph
 telethon-session-sqlalchemy==0.2.16
 telethon>=1.23.0
-twitter_scraper
-urbandict>=1.1.0
+twitter_scraper==0.4.4
+urbandict==0.6.1
 wikipedia>=1.4.0
 youtube-dl
 
