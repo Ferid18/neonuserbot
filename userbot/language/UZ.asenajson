@@ -32,7 +32,7 @@
             "PLUG_DELETED": "`Plugin yo'q qilindi!` **Amalga oshiriladigan operatsiyalar uchun qayta yuklashingiz kerak.**",
             "ASENA_PLUGIN_CAPTION": "Bu [Asena](https://t.me/AsenaUserBot) plugini."
         },
-        "__asena": {
+        "__neon": {
             "NEED_PLUGIN": "Iltimos Asena moduli nomini ko'rsating.",
             "NEED_MODULE": "Iltimos qaysi Asena moduli bilan yordam olishni xohlayotganingizni ko'rsating !!\nMasalan: .asena <modul nomi>"
         },
