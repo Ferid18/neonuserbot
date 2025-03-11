@@ -49,7 +49,7 @@ spotdl
 spotify_token
 sqlalchemy>=1.4.22
 telegraph
-telethon-session-sqlalchemy>=1.0.1
+telethon-session-sqlalchemy==0.2.16
 telethon>=1.23.0
 twitter_scraper
 urbandict>=1.1.0
