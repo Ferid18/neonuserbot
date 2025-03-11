@@ -33,7 +33,7 @@
             "ASENA_PLUGIN_CAPTION": "Bu [Asena](https://t.me/AsenaUserBot) pluginidir."
         },
         
-        "__asena": {
+        "__neon": {
             "NEED_PLUGIN": "Zəhmət olmasa bir Asena modulu adı yazın.",
             "NEED_MODULE": "Zəhmət olmasa hansı Asena modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .asena <modul adı>"
         },
