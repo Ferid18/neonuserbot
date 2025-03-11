@@ -230,12 +230,7 @@
       "value": "TR",
       "required": true
     }
-  },
-  "formation": {
-    "web": {
-        "quantity": 1,
-        "size": "free"
-    }
+    
   },
   "addons": [{
     "plan": "heroku-postgresql"
